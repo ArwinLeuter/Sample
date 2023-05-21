@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/gg/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Activity</title>
+</head>
+<body>
+ 
+ <h1 class="text-center text-info pt-3">Activity</h1>
+
+<div class="container-fluid row  pt-5 "">
+
+<!--------------------------------- Salesman Tables ---------------------------------->
+    <div class="container-fluid border col-md-3 rounded border border-info">
+            <h2 class="text-center pt-4">Salesman Tables</h2>
+            <form action="http://localhost/gg/index.php/salesman_tables" method="POST" class="p-3">
+                    <label for="">Salesman ID</label>
+                    <input name="salesman_id" type="number" class="form-control " min="0" max="100000000000"  >
+                <br>
+                    <label for="">Name</label>
+                    <input name="salesman_name" type="text" class="form-control" required>
+                <br>
+                    <label for="">City</label>
+                    <input  name="salesman_city" type="text" class="form-control" required>
+                <br>
+                    <label for="">Commission</label>
+                    <input name="salesman_commission" type="text" class="form-control"  required>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <label for=""> &nbsp</label>
+                    <input type="submit" value="Save" class="btn btn-success">
+                    <input type="reset" value="reset" class="btn btn-danger ms-1 me-1 ">
+                    <a href="http://localhost/gg/index.php/viewSalesman" class="btn btn-info text-light">view</a>
+                </div>
+
+            </form>
+    </div>
+
+
+
+</body>
+</html>
+
